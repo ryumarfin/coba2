@@ -31,7 +31,7 @@ class SecondActivity : AppCompatActivity() {
                 DatePickerDialog.OnDateSetListener {
                         view, year, monthOfYear, dayOfMonth ->
                             // Display Selected date in TextView
-                            tanggal.setText("$dayOfMonth / $month / $year")
+                            tanggal.setText("$dayOfMonth / $monthOfYear / $year")
                 }, year, month, day)
             datePickerDialog.show()
         }
