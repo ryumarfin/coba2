@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         //b.4 buat object Mobil
         var m = mutableListOf<Mobil>()
         //1.8 sediakan datanya terlebih dahulu
-        m.add(Mobil("Tesla","nobil bagus", 300,6,1,"asdfadff asdfdasf 23 sf 34 fdfa"))
-        m.add(Mobil("abc","nobil rusak", 50,4,2,"${R.string.deskripsi}"))
+        m.add(Mobil(R.drawable.ic_action_date,"Tesla","nobil bagus", 300,6,1,"asdfadff asdfdasf 23 sf 34 fdfa"))
+        m.add(Mobil(R.drawable.ic_action_date,"abc","nobil rusak", 50,4,2,"${R.string.deskripsi}"))
 
         myRecyView.apply{
             adapter = RecyViewAdapter(this@MainActivity, m)

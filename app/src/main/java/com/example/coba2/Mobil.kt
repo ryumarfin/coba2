@@ -4,7 +4,8 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class Mobil(var Nama : String ="nama mobil",
+data class Mobil(var Pic : Int,
+                var Nama : String ="nama mobil",
                 var Jenis : String = "jenis mobil",
                 var Harga : Int = 0,
                 var Seat : Int = 1,

@@ -60,6 +60,7 @@ class RecyViewAdapter(var context: Context, private val mobil :List<Mobil>) : Re
         holder.itemView.setOnClickListener {
             var intentDetail = Intent(context,SecondActivity::class.java)
             var m = Mobil(
+                mobil[position].Pic,
                 mobil[position].Nama,
                 mobil[position].Jenis,
                 mobil[position].Harga,
@@ -77,6 +78,7 @@ class RecyViewAdapter(var context: Context, private val mobil :List<Mobil>) : Re
 }
 
 class myHolder(view: View) : RecyclerView.ViewHolder(view){
+    private val img = view.gambar
     private val nama = view.namaMobil
     private val jenis = view.jenisMobil
     private val harga = view.hargaMobil
@@ -84,8 +86,8 @@ class myHolder(view: View) : RecyclerView.ViewHolder(view){
     private val bagasi = view.bagasiMobil
     private val deskripsi = view.deskripsi
 
-
     fun bindContact(tmp: Mobil) {
+        img.setImageResource(tmp.Pic)
         nama.text = tmp.Nama
         jenis.text = tmp.Jenis
         harga.text = tmp.Harga.toString()
