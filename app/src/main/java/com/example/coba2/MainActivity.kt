@@ -15,12 +15,16 @@ class MainActivity : AppCompatActivity() {
         //a.3 buat Secod activity
         //b.1 buat class Mobil.kt
 
-        //b.4 buat object Mobil
+        //b.4 buat list
         var m = mutableListOf<Mobil>()
-        //1.8 sediakan datanya terlebih dahulu
+
+        //b.5 masukkn data
         m.add(Mobil(R.drawable.ic_action_date,"Tesla","nobil bagus", 300,6,1,"asdfadff asdfdasf 23 sf 34 fdfa"))
         m.add(Mobil(R.drawable.ic_action_date,"abc","nobil rusak", 50,4,2,"${R.string.deskripsi}"))
 
+        //b.6 buat class recyvlewview Adapter
+
+        //b.8 jlnkn recycleview
         myRecyView.apply{
             adapter = RecyViewAdapter(this@MainActivity, m)
             layoutManager = LinearLayoutManager(this@MainActivity)
@@ -28,5 +32,8 @@ class MainActivity : AppCompatActivity() {
 
 //        myRecyView.layoutManager = LinearLayoutManager(this)
 //        myRecyView.adapter = RecyViewAdapter(m)
+
+
+
     }
 }

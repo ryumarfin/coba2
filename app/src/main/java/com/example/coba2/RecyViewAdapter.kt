@@ -46,7 +46,7 @@ import kotlinx.android.synthetic.main.layout_recy_view.view.*
 
 
 
-
+//b.7
 
 class RecyViewAdapter(var context: Context, private val mobil :List<Mobil>) : RecyclerView.Adapter<myHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): myHolder {
@@ -56,9 +56,12 @@ class RecyViewAdapter(var context: Context, private val mobil :List<Mobil>) : Re
     }
 
     override fun onBindViewHolder(holder: myHolder, position: Int) {
+        //mengambil data yg dipilih
         holder.bindContact(mobil[position])
+        //tambah listenr utk item yg diclik
         holder.itemView.setOnClickListener {
             var intentDetail = Intent(context,SecondActivity::class.java)
+            //ambil data dari data class
             var m = Mobil(
                 mobil[position].Pic,
                 mobil[position].Nama,
@@ -68,7 +71,7 @@ class RecyViewAdapter(var context: Context, private val mobil :List<Mobil>) : Re
                 mobil[position].Bag,
                 mobil[position].Deskripsi
             )
-
+            //kirim data ke second activity dgn parcelable
             intentDetail.putExtra(KIRIM_DATA, m)
             context.startActivity(intentDetail)
         }
@@ -78,6 +81,7 @@ class RecyViewAdapter(var context: Context, private val mobil :List<Mobil>) : Re
 }
 
 class myHolder(view: View) : RecyclerView.ViewHolder(view){
+    //tampung data
     private val img = view.gambar
     private val nama = view.namaMobil
     private val jenis = view.jenisMobil
