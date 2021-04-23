@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">coba2</string>
     <string name="deskripsi">Dalam Kamus Besar Bahasa Indonesia (KBBI), arti kata deskripsi adalah pemaparan atau penggambaran dengan kata-kata secara jelas dan terperinci. Teks deskripsi merupakan teks yang menggambarkan atau memaparkan suatu objek secara jelas dan terperinci. Paragraf deskripsi adalah kalimat-kalimat yang mendeskripsikan, menggambarkan sesuatu dari suatu kejadian baik yang dialami, dilihat, atau diamati. Semakin jelas tentang penggamabran sesuatu dan kepenulisan paragraf deskripsi, makan akan menjadi kalimat yang sangat baik. contohnya : Tas itu dibikin dari plastik.</string>
+    <string-array name="hari">
+        <item>Satu</item>
+        <item>Dua</item>
+        <item>Tiga</item>
+        <item>Empat</item>
+        <item>Lima</item>
+        <item>Enam</item>
+    </string-array>
 </resources>
