@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="200dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/namaMobil"
+            android:layout_toRightOf="@+id/gambar"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Nama Mobil"/>
+        <TextView
+            android:id="@+id/jenisMobil"
+            android:layout_toRightOf="@+id/gambar"
+            android:layout_below="@+id/namaMobil"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Mobil"/>
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_toRightOf="@+id/gambar"
+            android:layout_below="@+id/jenisMobil"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"/>
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_below="@+id/gambar"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $"/>
+        <TextView
+            android:id="@+id/hargaMobil"
+            android:layout_below="@+id/gambar"
+            android:layout_toRightOf="@+id/harga"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300"/>
+        <TextView
+            android:layout_below="@+id/gambar"
+            android:layout_toRightOf="@+id/hargaMobil"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/Day"/>
+        <TextView
+            android:id="@+id/kursi"
+            android:layout_below="@+id/hargaMobil"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seat: "/>
+        <TextView
+            android:id="@+id/kursiMobil"
+            android:layout_below="@+id/hargaMobil"
+            android:layout_toRightOf="@+id/kursi"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"/>
+        <TextView
+            android:id="@+id/bagasi"
+            android:layout_below="@+id/hargaMobil"
+            android:layout_toRightOf="@+id/kursiMobil"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bag: "/>
+        <TextView
+            android:id="@+id/bagasiMobil"
+            android:layout_below="@+id/hargaMobil"
+            android:layout_toRightOf="@+id/bagasi"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
